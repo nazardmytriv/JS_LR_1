@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 1</title>
+</head>
+<body>
+
+<ul id="list"></ul>
+
+<script>
+  let name = "Назар";
+  let list = document.getElementById("list");
+
+  for (let letter of name) {
+    let li = document.createElement("li");
+    li.textContent = letter;
+    li.onmouseover = function () {
+      alert(letter);
+    };
+    list.appendChild(li);
+  }
+</script>
+
+</body>
+</html>
